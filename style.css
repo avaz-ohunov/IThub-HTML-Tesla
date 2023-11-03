@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+    color: #f0f8ff;
+    background-image: linear-gradient(#222, #06062e);
+    margin: 0;
+    overflow-x: hidden;
+    font-size: 2vw;
+    font-family: 'Rubik', sans-serif;
+}
+
+header {
+	display: inline-flex;
+	width: 100%;
+}
+
+a {
+	color: #e82127;
+	text-decoration: none;
+}
+
+img {
+	object-fit: cover;
+	display: block;
+}
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+ul {
+	list-style: none;
+	display: inline;
+}
+
+li {
+    float: right;
+	margin: 10px;
+}
+
+abbr {
+	text-decoration: none;
+}
+
+button {
+	width: 300px;
+	height: 45px;
+	margin: 10px;
+	display: inline-block;
+	border: none;
+	border-radius: 4px;
+	font-family: 'Rubik', sans-serif;
+	font-size: 100%;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+/*Логотип*/
+.logo {
+	display: inline-block;
+	margin-bottom: -10px;
+	width: 111px;
+	height: 151px;
+}
+
+/*Шапка*/
+.header {
+	display: flex;
+	width: 100%;
+	border-bottom: solid;
+	border-color: #3c4b72;
+}
+
+/*Родительские блоки*/
+.modelS, .model3, .modelX {
+	width: 100vw;
+	height: 100vh;
+	background-size: cover;
+	background-position:center;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+.modelS {
+	background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Desktop-LHD-6.22.jpg");
+	color: #222;
+	margin-top: 100px;
+}
+
+.model3 {
+	background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Desktop-NA.jpg");
+}
+
+.modelX {
+	background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1800,w_2880,c_fit,f_auto,q_auto:best/Homepage-Model-X-Desktop-LHD");
+	color: #06062e;
+}
+
+/*Верхний блок(дочерний)*/
+.top_block {
+	text-align: center;
+	padding-top: 25px;
+}
+
+/*Нижний блок(дочерний)*/
+.bottom_block {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+
+/*Кнопка Order Now*/
+.orderNow {
+	background-color: #ccc;
+	color: #333;
+}
+
+/*Кнопка Demo Drive*/
+.demoDrive {
+	background-color: #333;
+	color: #ccc;
+}
+
+/*Примечания*/
+.economyS, .economy3, .economyX {
+	text-decoration: underline;
+}
+
+.economyS {
+	color: #222;
+}
+
+.economy3, .economyX, .textX {
+	color: #f0f8ff;
+}
+
+/*Футер*/
+.footer {
+	border-top: solid;
+	border-color: #3c4b72;
+}
+
+/* Адаптируем фотки и шрифт под планшеты/телефоны */
+@media(max-width: 700px) {
+	body {
+		font-size: 4vw;
+	}
+
+	.modelS {
+		background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-S-Mobile-LHD-6.22.jpg");
+	}
+
+	.model3 {
+		background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Homepage-Model-3-Mobile-NA.jpg");
+	}
+	
+	.modelX {
+		background-image: url("https://digitalassets.tesla.com/tesla-contents/image/upload/h_1700,w_800,c_fit,f_auto,q_auto:best/Homepage-Model-X-Mobile-LHD_001");
+	}
+}
+
+/* Адаптируем навигацию под телефоны */
+@media(max-width: 375px) {
+	.logo {
+		width: 61px;
+		height: 101px;
+	}
+
+	nav {
+		margin-top: 25px;
+	}
+
+	.nav {
+		font-size: 3.5vw;
+	}
+}
+
+/* Адаптируем кнопки под телефоны/планшеты */
+@media(max-width: 320px) or (max-width: 650px) {
+	button {
+		width: 250px;
+	}
+}
+
+/* Адаптируем отступ текста под телефоны */
+@media(max-width: 400px) {
+	.top_block {
+		padding-top: 50px;
+	}
+}
+
+/* Адаптируем текст под планшеты */
+@media(min-width: 700px) {
+	body {
+		font-size: 3.5vw;
+	}
+}
+
+/* Адаптируем текст под ноутбуки */
+@media(min-width: 1000px) {
+	body {
+		font-size: 2vw;
+	}
+}
+
+/* Адаптируем кнопки, навигацию и логотип под широкие мониторы */
+@media(min-width: 1400px) {
+	button {
+		width: 500px;
+		height: 75px;
+	}
+
+	nav {
+		margin-top: 70px;
+	}
+
+	.logo {
+		width: 300px;
+		height: 200px;
+	}
+}

@@ -1,0 +1,189 @@
+<!-- Сайт Теслы на минималках (ツ) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="https://cdn.icon-icons.com/icons2/2699/PNG/512/tesla_logo_icon_169601.png">
+    <title>Tesla</title>
+    <script type="text/javascript">
+        function openURL(url){
+            window.open(url, "_blank")
+        }
+
+        width = window.screen.width
+        height = window.screen.height
+
+        console.log(`${width}x${height}`)
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <!-- Ссылка-картинка на сайт Теслы -->
+            <a href="https://www.tesla.com/" target="_blank">
+                <img src="https://static.tildacdn.com/tild6337-3964-4536-b739-373630346463/image5.png"
+                     class="logo"
+                     alt="Tesla logo">
+            </a>
+
+            <nav>
+                <ul>
+                    <!-- Внутренняя навигация -->
+                    <li><a href="#modelX" class="nav">Model X</a>
+                    <li><a href="#model3" class="nav">Model 3</a>
+                    <li><a href="#modelS" class="nav">Model S</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- В основе 3 блока о трёх разных моделях Тесла -->
+    <main>
+        <div class="modelS" id="modelS"> <!-- Родительский блок -->
+            <div class="top_block"> <!-- Дочерний блок -->
+                <h1>Model S</h1>
+                <strong>From $71,090*</strong>
+                <br>
+                <small>After Est. Gas Savings</small>
+            </div>
+
+            <div class="bottom_block"> <!-- Дочерний блок -->
+                <button type="submit" 
+                        onclick="openURL('https://www.tesla.com/models/design#overview')"
+                        class="orderNow">
+
+                    Order Now
+                </button>
+
+                <button type="submit" 
+                        onclick="openURL('https://www.tesla.com/drive?selectedModel=ModelS')"
+                        class="demoDrive">
+                        
+                    Demo Drive
+                </button>
+
+                <p>
+                    *Price before incentives and savings is $74,990, excluding taxes and fees. Subject to change.
+                    <br>
+                    <a href="https://www.tesla.com/models/design?financeModalTab=gas_savings#overview" 
+                       target="_blank"
+                       class="economyS">
+                    
+                        Learn about est. gas savings.
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="model3" id="model3"> <!-- Родительский блок -->
+            <div class="top_block"> <!-- Дочерний блок -->
+                <h1>Model 3</h1>
+                <strong>From $28,490*</strong>
+                <br>
+                <small>After Federal Tax Credit & Est. Gas Savings</small>
+            </div>
+
+            <div class="bottom_block"> <!-- Дочерний блок -->
+                <button type="submit" 
+                        onclick="openURL('https://www.tesla.com/model3/design#overview')"
+                        class="orderNow">
+
+                    Order Now
+                </button>
+
+                <button type="submit" 
+                        onclick="openURL('https://www.tesla.com/drive?selectedModel=Model3')"
+                        class="demoDrive">
+                        
+                    Demo Drive
+                </button>
+
+                <p>
+                    *Price before incentives and savings is $38,990, excluding taxes and fees. Subject to change.
+                    <br>
+                    <a href="https://www.tesla.com/model3/design?financeModalTab=gas_savings#overview" 
+                       target="_blank"
+                       class="economy3">
+                    
+                        Learn about est. gas savings.
+                    </a>
+                </p>
+            </div>
+        </div>
+
+        <div class="modelX" id="modelX"> <!-- Родительский блок -->
+            <div class="top_block"> <!-- Дочерний блок -->
+                <h1>Model X</h1>
+                <strong>From $68,590*</strong>
+                <br>
+                <small>After Federal Tax Credit & Est. Gas Savings</small>
+            </div>
+
+            <div class="bottom_block"> <!-- Дочерний блок -->
+                <button type="submit" 
+                        onclick="openURL('https://www.tesla.com/modelx/design#overview')"
+                        class="orderNow">
+
+                    Order Now
+                </button>
+
+                <button type="submit" 
+                        onclick="openURL('https://www.tesla.com/drive?selectedModel=ModelX')"
+                        class="demoDrive">
+                        
+                    Demo Drive
+                </button>
+
+                <p class="textX">
+                    *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change.
+                    <br>
+                    <a href="https://www.tesla.com/modelx/design?financeModalTab=gas_savings#overview" 
+                       target="_blank"
+                       class="economyX">
+                    
+                        Learn about est. gas savings.
+                    </a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p align="center">
+                <a href="https://www.tesla.com/about" target="_blank">
+                    <abbr title="Copyright 2023 Tesla Motors">
+                        Tesla &copy; 2023
+                    </abbr>
+                </a>
+    
+                <a href="https://www.tesla.com/legal" target="_blank">
+                    &nbsp;&nbsp;&nbsp;Privacy & Legal
+                </a>
+    
+                <a href="https://www.tesla.com/vin-recall-search" target="_blank">
+                    &nbsp;&nbsp;&nbsp;Vehicle Recalls
+                </a>
+    
+                <a href="https://www.tesla.com/contact" target="_blank">
+                    &nbsp;&nbsp;&nbsp;Contact
+                </a>
+    
+                <a href="https://www.tesla.com/blog" target="_blank">
+                    &nbsp;&nbsp;&nbsp;News
+                </a>
+    
+                <a href="https://www.tesla.com/updates" target="_blank">
+                    &nbsp;&nbsp;&nbsp;Get Updates
+                </a>
+    
+                <a href="https://www.tesla.com/findus/list" target="_blank">
+                    &nbsp;&nbsp;&nbsp;Locations
+                </a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
